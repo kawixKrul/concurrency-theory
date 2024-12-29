@@ -12,10 +12,8 @@ def resolve_foata_GH_method(word, D, alphabet) -> list[list]:
                 
         for key in stacks.keys():
             stacks[key].reverse()
-        #print(stacks)
 
         while any(stacks.values()):  
-            #print(stacks)
             step = []
             for key in stacks.keys():
                 if stacks[key] and stacks[key][-1] != '*':

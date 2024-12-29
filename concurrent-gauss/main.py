@@ -46,7 +46,6 @@ if __name__ == "__main__":
     visualize_diekerts_graph(CG.len, args.out)
     
     result = CG.resolve()
-    print(result)
     for row in result: 
         print(row)
     matrix_to_check = CG.to_diagonal()
@@ -99,3 +98,4 @@ if __name__ == "__main__":
                 subprocess.call(['open', log_file])
             else:
                 subprocess.call(['xdg-open', log_file])
+                

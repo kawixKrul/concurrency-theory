@@ -47,5 +47,5 @@ def visualize_diekerts_graph(n, filename):
             if l != m and i == l - 1 and j == m and k == x:
                 G.edge(C1_label, C2_label)
 
-
     G.save(filename=f'{filename}.dot')
+    
